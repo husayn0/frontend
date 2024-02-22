@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title text-center mb-4">Sign Up</h2>
+          <form (ngSubmit)="signup(username.value, password.value, fullname.value)" #form2 name="form2">
+            <div class="form-group">
+              <label for="fullname">Full Name</label>
+              <input type="text" class="form-control" id="fullname" #fullname placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" class="form-control" id="username" #username placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" #password placeholder="Enter your password" required>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+            <br><br>
+            <a class="inline-block right-0 align-baseline font-bold text-sm text-500 hover:text-blue-800" (click)="navigateTo('/login')">
+              Already have an account ?
+          </a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

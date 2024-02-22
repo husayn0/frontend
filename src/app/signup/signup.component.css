@@ -1,0 +1,13 @@
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    color: #333333;
+  }
+  
+  .container {
+    margin-top: 50px;
+  }
+    

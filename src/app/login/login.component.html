@@ -1,0 +1,23 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <div class="card p-4">
+        <h2 class="text-center mb-4">Login</h2>
+        <form (ngSubmit)="login(username.value, password.value)" #form1 name="form1"> 
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" #username id="username" class="form-control" placeholder="Enter username" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" #password id="password" class="form-control" placeholder="Enter password" required>
+          </div>
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="button" class="btn btn-secondary" (click)="navigateTo('/signup')">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
